@@ -1,0 +1,24 @@
+# Model weights / checkpoints — hosted on Google Drive (see README)
+*.pth
+*.pt
+*.ckpt
+
+# Archives / datasets
+*.tar.xz
+*.tar.gz
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

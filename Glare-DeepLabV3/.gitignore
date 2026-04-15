@@ -1,0 +1,4 @@
+CARLA_dataset/
+runs/
+models/
+.ipynb_checkpoints/
