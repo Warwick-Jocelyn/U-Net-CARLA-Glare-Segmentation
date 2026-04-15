@@ -87,19 +87,21 @@ A small sample dataset for DeepLabV3 ships as `CARLA_smalldataset.tar.xz` (hoste
 
 ## Pre-trained weights & sample data
 
-The trained checkpoints and the sample dataset archive are **not** stored in this repository because they exceed GitHub's 100 MB per-file limit. They can be downloaded from Google Drive:
+The trained checkpoints and the sample dataset archive are **not** stored in this repository because they exceed GitHub's 100 MB per-file limit. They are hosted in a single shared Google Drive folder:
 
-| File | Model | Size | Link |
-|------|-------|------|------|
-| `Unet_epoch_100_checkpoint.pth`        | U-Net (epoch 100)            | 119 MB | *TODO: paste Google Drive link* |
-| `Unet_epoch_98_checkpoint.pth`         | U-Net (epoch 98)             | 119 MB | *TODO: paste Google Drive link* |
-| `final.pth`                             | U-Net (final)                | 119 MB | *TODO: paste Google Drive link* |
-| `deeplabv3_resnet50_coco-cd0a2569.pth` | DeepLabV3 COCO pre-trained   | 161 MB | *TODO: paste Google Drive link* |
-| `CARLA_small_dataset_resnet50_*.pt`    | DeepLabV3 trained on CARLA   | 161 MB | *TODO: paste Google Drive link* |
-| `Glare_Dataset_resnet50_*.pt`          | DeepLabV3 trained on Glare set | 161 MB | *TODO: paste Google Drive link* |
-| `CARLA_smalldataset.tar.xz`            | Sample dataset               | —      | *TODO: paste Google Drive link* |
+📁 **[Download all weights & sample data](https://drive.google.com/drive/folders/1VR2pfOnIvuF__obmzvZbm8N6OO86WkaO?usp=drive_link)**
 
-After downloading, place the `.pth` / `.pt` files back under the corresponding `Glare-U-Net/` or `Glare-DeepLabV3/` directory.
+| File | Model / Purpose | Size | Place under |
+|------|-----------------|------|-------------|
+| `Unet_epoch_100_checkpoint.pth`        | U-Net checkpoint (epoch 100)              | 119 MB | `Glare-U-Net/` |
+| `Unet_epoch_98_checkpoint.pth`         | U-Net checkpoint (epoch 98)               | 119 MB | `Glare-U-Net/` |
+| `final.pth`                            | U-Net final weights                       | 119 MB | `Glare-U-Net/` |
+| `deeplabv3_resnet50_coco-cd0a2569.pth` | DeepLabV3 COCO pre-trained backbone       | 161 MB | `Glare-DeepLabV3/` |
+| `CARLA_small_dataset_resnet50_*.pt`    | DeepLabV3 trained on CARLA small dataset  | 161 MB | `Glare-DeepLabV3/` |
+| `Glare_Dataset_resnet50_*.pt`          | DeepLabV3 trained on the Glare dataset    | 161 MB | `Glare-DeepLabV3/` |
+| `CARLA_smalldataset.tar.xz`            | Sample RGB + mask dataset                 | —      | `Glare-DeepLabV3/` (then extract) |
+
+After downloading, place each `.pth` / `.pt` file back under the corresponding directory so that `train.py` / `eval.py` / `demo.py` can find them.
 
 ---
 
