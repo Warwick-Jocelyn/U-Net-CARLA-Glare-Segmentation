@@ -137,7 +137,7 @@ Training loss curves are saved as `losses.png` inside each model directory. Both
 
 ## License
 
-The DeepLabV3 sub-project is released under the MIT License (see `Glare-DeepLabV3/LICENSE`). The rest of the repository is provided for research and educational purposes.
+This project is released under the [MIT License](LICENSE).
 
 ## Acknowledgements
 
